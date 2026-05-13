@@ -1,26 +1,28 @@
 #Algorithm: Find Extremes
-#Input:
- #- A: An unsorted list of 'n' elements
-# - n: The size of the list
+#Input: Unsorted list A of n elements
 #Output: Maximum and Minimum values in list A
 
-#function findExtremes(A, n):
-   # Step 1: Start
-   # Step 2: Set max_val = A[0]
-   # Step 3: Set min_val = A[0]
-    #Step 4: For each num in A:
-               # if num > max_val:
-                 #   max_val = num
-               # if num < min_val:
-                #    min_val = num
-    #Step 5: Print max_val and min_val
-    #Step 6: Stop
+#Step 1: Start
+
+#Step 2: Define unsorted list A = [4, 2, 7, 1, 5, 9]
+
+#Step 3: Set max_val = A[0]  (first element)
+
+#Step 4: Set min_val = A[0]  (first element)
+
+#Step 5: For each num in A:
+ #           if num > max_val:
+ #               max_val = num
+  #          if num < min_val:
+  #              min_val = num
+
+#Step 6: Print max_val
+
+#Step 7: Print min_val
+
+#Step 8: Stop
 
 
-
-# Algorithm: Find Extremes
-# Input: Unsorted list A of n elements
-# Output: Maximum and Minimum values
 
 # Step 1: Define unsorted list
 A = [4, 2, 7, 1, 5, 9]
