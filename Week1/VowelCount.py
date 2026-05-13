@@ -6,7 +6,7 @@ def count_vowels(text):
     # 2. Loop through the input 'text' (converted to lowercase)
     for char in text.lower():
         if char in vowels:
-            # 3. Update the tally for that specific vowel
+            # 3. Update  for that specific vowel
             counts[char] = counts.get(char, 0) + 1
 
     # 4. Return the final dictionary so we can use it outside the function
