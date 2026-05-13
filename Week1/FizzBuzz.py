@@ -7,7 +7,7 @@ for i in range(1, 101):        # Go from 1 to 100
 	print()                    # Print newline
 
 
-"""
-For each number 1–100, print the number, then independently check if it's divisible by 3 ("Fizz") and 5 ("Buzz").
-Because these are two separate if statements, a number divisible by both naturally prints "FizzBuzz" without needing a third check.
-"""
+# """
+# For each number 1–100, print the number, then independently check if it's divisible by 3 ("Fizz") and 5 ("Buzz").
+# Because these are two separate if statements, a number divisible by both naturally prints "FizzBuzz" without needing a third check.
+# """

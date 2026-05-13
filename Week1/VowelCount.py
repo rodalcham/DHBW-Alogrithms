@@ -22,16 +22,27 @@ def count_vowels(text):
     return count
 
 
-"""
-ALGORITHM:
-1. Start with a piece of text (a string).
-2. Define what a vowel is (a, e, i, o, u).
-3. Create a counter and set it to 0.
-4. Convert the entire text to lowercase.
-5. Look at every single character in the text, one at a time.
-6. Ask: "Is this character in my list of vowels?"
- - If Yes, add 1 to the counter.
-- If No, do nothing and move to the next character.
-7. Stop looking when you reach the end of the text.
-8. Return the final number in the counter.
-"""
+
+string = "Hello Worldaaaa"
+vowels = "aeiou"
+counts = {}
+
+for char in string.lower():
+    if char in vowels:
+        counts[char] = counts.get(char, 0) + 1
+
+print(counts)
+
+# """
+# ALGORITHM:
+# 1. Start with a piece of text (a string).
+# 2. Define what a vowel is (a, e, i, o, u).
+# 3. Create a counter and set it to 0.
+# 4. Convert the entire text to lowercase.
+# 5. Look at every single character in the text, one at a time.
+# 6. Ask: "Is this character in my list of vowels?"
+#  - If Yes, add 1 to the counter.
+# - If No, do nothing and move to the next character.
+# 7. Stop looking when you reach the end of the text.
+# 8. Return the final number in the counter.
+# """
