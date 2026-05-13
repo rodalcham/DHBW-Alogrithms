@@ -23,22 +23,15 @@ def count_vowels(text):
 
 
 """
-=========================================
-      ALGORITHM: VOWEL COUNTER
-=========================================
-Here is the step-by-step logic for the code above:
-
-PLAIN ENGLISH:
+ALGORITHM:
 1. Start with a piece of text (a string).
 2. Define what a vowel is (a, e, i, o, u).
 3. Create a counter and set it to 0.
-4. Convert the entire text to lowercase so you don't miss uppercase letters.
+4. Convert the entire text to lowercase.
 5. Look at every single character in the text, one at a time.
 6. Ask: "Is this character in my list of vowels?"
-   - If Yes, add 1 to the counter.
-   - If No, do nothing and move to the next character.
+ - If Yes, add 1 to the counter.
+- If No, do nothing and move to the next character.
 7. Stop looking when you reach the end of the text.
 8. Return the final number in the counter.
-
-=========================================
 """
