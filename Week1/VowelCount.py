@@ -1,48 +1,29 @@
 def count_vowels(text):
-    # Create a list of the vowels we want to look for
+    # 1. Define the vowels to look for
     vowels = ['a', 'e', 'i', 'o', 'u']
+    counts = {}
 
-    # Create a counter variable and start it at 0
-    count = 0
-
-    # Convert the entire text to lowercase
-    # This ensures we don't miss uppercase vowels like 'A' or 'E'
-    text = text.lower()
-
-    # Start a loop to look at every single character in the text, one by one
-    for char in text:
-
-        # Check if the current character is inside our list of vowels
+    # 2. Loop through the input 'text' (converted to lowercase)
+    for char in text.lower():
         if char in vowels:
-            # If it is a vowel, add 1 to our running total
-            count += 1
+            # 3. Update the tally for that specific vowel
+            counts[char] = counts.get(char, 0) + 1
 
-    # Once the loop has finished checking every character,
-    # give the final tally back to the user
-    return count
-
+    # 4. Return the final dictionary so we can use it outside the function
+    return counts
 
 
-string = "Hello Worldaaaa"
-vowels = "aeiou"
-counts = {}
+# --- Testing the code ---
+input_string = "Hello Worldaaaa"
+result = count_vowels(input_string)
 
-for char in string.lower():
-    if char in vowels:
-        counts[char] = counts.get(char, 0) + 1
-
-print(counts)
-
-# """
+print(result)
 # ALGORITHM:
-# 1. Start with a piece of text (a string).
-# 2. Define what a vowel is (a, e, i, o, u).
-# 3. Create a counter and set it to 0.
-# 4. Convert the entire text to lowercase.
-# 5. Look at every single character in the text, one at a time.
-# 6. Ask: "Is this character in my list of vowels?"
-#  - If Yes, add 1 to the counter.
-# - If No, do nothing and move to the next character.
-# 7. Stop looking when you reach the end of the text.
-# 8. Return the final number in the counter.
-# """
+# 1. Provide a string of text and a set of characters defined as vowels.
+# 2. Initialize an empty dictionary to store the individual counts.
+# 3. Normalize the text by converting it to lowercase.
+# 4. Iterate through every character in the text one by one.
+# 5. Check if the character is a vowel.
+# 6. If it is a match, add 1 to that specific vowel's tally in the dictionary.
+# 7. Continue until every character in the string has been processed.
+# 8. Return or print the final results.
