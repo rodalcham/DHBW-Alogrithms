@@ -14,9 +14,9 @@ class TicketQueue:
 # Example
 tickets = TicketQueue()
 
-tickets.add_customer("Alice")
-tickets.add_customer("Bob")
-tickets.add_customer("Charlie")
+tickets.add_customer("Rodrigo")
+tickets.add_customer("Aylin")
+tickets.add_customer("Dario")
 
 print(tickets.serve_customer())
 print(tickets.serve_customer())

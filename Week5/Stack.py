@@ -13,4 +13,4 @@ def reverse_string(text):
 
 
 # Example
-print(reverse_string("hello")) 
+print(reverse_string("desserts")) 
